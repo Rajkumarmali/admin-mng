@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Admin.css">
+    <title>User Detail Page</title>
+</head>
+<body>
+    <div>
+        <a class="usr-detl-btn" href="./createUser.html">< Back</a>
+         <!-- <div id="userDetails"></div> -->
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User Id</th>
+                        <th>Name</th>
+                        <th>Photo</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td id="userId"></td>
+                        <td id="userName"></td>
+                        <td id="userPhoto" ></td>
+                        <td id="userUp"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          
+          const urlParams = new URLSearchParams(window.location.search);
+
+          
+          const userId = urlParams.get('userId');
+          const name = urlParams.get('name');
+          const photo = urlParams.get('photo')
+          const status = urlParams.get('status');
+          const id = urlParams.get('_id')
+
+          const userDetailsId = document.getElementById('userId');
+          userDetailsId.innerHTML = `<p>${userId}</p>`;
+         
+         const userName = document.getElementById('userName');
+         userName.innerHTML = `<p>${name !== null ? name : ''}</p>`;
+          
+         const userPhoto = document.getElementById('userPhoto');
+         userPhoto.innerHTML = `<img src="${photo !== null ? photo : 'https://i.stack.imgur.com/l60Hf.png'}" alt="User Photo" style="height: 80px; width: 77px;">`;
+         
+         const userStatus = document.getElementById('userUp');
+         userStatus.innerHTML = `<p>${status !== null ? (status === 'false' ? '<a class="done-btn">Done</a> <a class="dlt-btn" onclick="deleteUser">Delete</a>' : '<a class="dlt-btn" onclick="deleteUser">Delete</a>') : ''}</p>`;
+           
+         
+
+          // console.log({
+          //       userId,
+          //       name,
+          //       photo,
+          //       status,
+          //       id
+          //   });
+      });
+    </script> -->
+
+    <script src="./script.js"></script>
+</body>
+</html>
+

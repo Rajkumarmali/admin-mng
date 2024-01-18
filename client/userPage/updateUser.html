@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./User.css"> 
+</head>
+<body>
+    <div class="container">
+        <a class="view-btn" href="#" onclick="openUserDetail()">View</a>
+        <div id="userDetail" class="user-detail hidden">
+            <button class="back-btn" onclick="closeUserDetail()">Back</button>
+            <div class="user-detil">
+                <label>Name</label>
+                <p id="userName" style="border: 1px solid #CDCDCD; border-radius: 2px ; padding: 7px; width: 316px; color: #5C5C5C;"></p>
+                <label>Photo</label>
+                <p id="userphoto"></p>
+                <p id="status" style="font-size: 30px; margin-left: 39px"></p>
+            </div>
+            
+        </div>
+        <form class="up-form">
+            <label>Name</label>
+            <input  type="text" id="name" name="name" required>
+            <label>photo</label>
+            <input  class="img-input">
+            <label class="image-label" for="image">
+                <span id="upload-text">UPLOAD</span>
+                <input type="file" id="image" name="image" onchange="setImage()">
+            </label>
+            
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

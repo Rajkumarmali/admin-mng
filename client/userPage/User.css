@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    height: 100vh; 
+}
+
+.left-side, .right-side {
+    text-align: center;
+    padding: 20px;
+    flex: 4;
+}
+
+.left-side {
+    background: url('../Image/Logo.png') left top no-repeat;
+    background-size: auto 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side {
+   
+}
+.login-container {
+    text-align: center;
+    padding: 170px;
+    background-color: #ffffff;
+    border-radius: 8px;
+     margin: 100px 0 0 0;
+}
+.h2_{
+   margin:  200px 0 0 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    
+}
+
+.button {
+    background-color: #0500FF;
+    color: white;
+    margin: 10px;
+    border: none;
+    padding: 10px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #120ee4;
+}
+/*  user update */
+.up-form {
+    display: block;
+    width: 300px; 
+    margin: 260px 0 0 580px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #5C5C5C;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.view-btn{
+    padding: 15px 35px 16px 31px;
+    margin: 10px 0 0 36px;
+    border: solid #0500FF;
+    position: absolute;
+    top: 10px;
+    right: 40px; 
+    color: #0500FF;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.user-detail {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 37%; /* Adjust the width as needed */
+    height: 100vh; /* Full height of the viewport */
+    background-color: white;
+    z-index: 1000; /* Ensure it appears above other elements */
+    padding: 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2); /* Optional: Add a box shadow for a visual effect */
+}
+
+.hidden {
+    display: none;
+}
+.back-btn {
+    
+    padding: 15px 35px 16px 31px;
+    margin: 10px 0 0 36px;
+    border: solid #0500FF;
+    position: absolute;
+    top: 10px;
+    right: 40px; 
+    color: #0500FF;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.user-detil{
+    margin: 116px 0 0 101px;
+}
+.image-label {
+    width: 295px;
+    text-align: center;
+    padding: 10px;
+    background-color: #0703f8;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.image-label:hover{
+    background-color: #201ddb;
+}
+.image-label input[type="file"] {
+    display: none;
+}
+.img-input{
+    border: 1px dashed #CDCDCD;
+    height: 152px;
+    width: 300px;
+    background-color: #EEEEEE
+}
